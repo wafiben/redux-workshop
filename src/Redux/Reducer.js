@@ -1,9 +1,10 @@
-const initState=0;
-const Reducer=(state=initState,action)=>{
-    switch(action.type){
-        case "INCREMENT":return state+1;
-        case "DECREMENT":return state-1;
-        default:return state
-    }
-}
-export default Reducer
+const initState = [];
+const Reducer = (state = initState, action) => {
+  switch (action.type) {
+    case "ADD_USER":
+      return [...state,action.payload];
+    default:
+      return state;
+  }
+};
+export default Reducer;

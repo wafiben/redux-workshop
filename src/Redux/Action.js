@@ -1,6 +1,3 @@
-export const increment=()=>{
-    return {type:"INCREMENT"}
-}
-export const decrement=()=>{
-    return {type:"DECREMENT"}
-}
+export const addUser = (user) => {
+  return { type: "ADD_USER", payload: user };
+};
